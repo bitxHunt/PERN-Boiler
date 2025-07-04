@@ -1,0 +1,29 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Backend (Server) Setup",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp -r ./src/generated ./dist/src/generated",
+    "start": "node dist/index.js",
+    "dev": "npx tsx watch index.ts"
+  },
+  "author": "Thiha Swan Htet",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "zod": "^3.25.72"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "nodemon": "^3.1.10",
+    "prisma": "^6.11.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
